@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prathamesh Dagade | Digital Portfolio</title>
+
+    <style>
+        /* ---------- GENERAL STYLING ---------- */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* ---------- NAVIGATION ---------- */
+
+        nav {
+            background-color: #172554;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #60a5fa;
+        }
+
+        /* ---------- HERO SECTION ---------- */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #dbeafe, #f8fafc);
+        }
+
+        .hero img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #555;
+        }
+
+        /* ---------- SECTIONS ---------- */
+
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #172554;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        /* ---------- ABOUT ---------- */
+
+        .about {
+            background-color: white;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            color: #555;
+        }
+
+        /* ---------- SKILLS ---------- */
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* ---------- PROJECTS ---------- */
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: white;
+            width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .project-card h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #555;
+        }
+
+        /* ---------- ACHIEVEMENTS ---------- */
+
+        .achievements {
+            background-color: white;
+        }
+
+        .achievement-list {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .achievement-list li {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #eff6ff;
+            border-left: 5px solid #2563eb;
+            list-style: none;
+        }
+
+        /* ---------- CONTACT ---------- */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ---------- MOBILE RESPONSIVE ---------- */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+        <h2>Prathamesh</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home Section -->
+
+    <section class="hero" id="home">
+
+        <div>
+
+            <!-- Replace profile.jpg with your own photo -->
+            <img src="profile.jpg" alt="Prathamesh Dagade">
+
+            <h1>Hi, I'm Prathamesh Dagade</h1>
+
+            <h3>Computer Engineering Student</h3>
+
+            <p>
+                I am a passionate computer engineering student interested in
+                programming, technology and problem solving. I enjoy learning
+                new technologies and developing projects that turn ideas into
+                practical solutions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am currently pursuing Computer Engineering and building my
+            knowledge in programming and computer science. I am interested in
+            software development, artificial intelligence and emerging
+            technologies. My goal is to continuously improve my technical
+            skills and become a better engineer.
+        </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">C Programming</div>
+            <div class="skill">C++</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">Git & GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A basic student management program developed using C.
+                    It allows users to store, display and manage student
+                    information using programming concepts such as arrays,
+                    functions and structures.
+                </p>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="project-card">
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website created using
+                    HTML and CSS. It showcases my profile, skills, projects
+                    and achievements through a clean and modern design.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Achievements Section -->
+
+    <section class="achievements" id="achievements">
+
+        <h2>Achievements</h2>
+
+        <ul class="achievement-list">
+
+            <li>
+                Completed academic programming assignments and projects.
+            </li>
+
+            <li>
+                Developed foundational skills in C, HTML and CSS.
+            </li>
+
+            <li>
+                Participated in academic group discussions and technical
+                activities.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Prathamesh Dagade | Digital Portfolio</p>
+
+    </footer>
+
+</body>
+</html>
